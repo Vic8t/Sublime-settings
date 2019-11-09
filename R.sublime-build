@@ -1,0 +1,5 @@
+{
+    "cmd": ["start", "cmd", "/C", "R -e source('$file_name')"],
+    "working_dir": "$file_path",
+    "shell" : true
+}
