@@ -1,6 +1,6 @@
 {
     "cmd": [
-    "g++", "-g", "-Wall", "*.cpp", "-o", "main.exe", "&&", "start", "cmd", "/K" , "$file_base_name"
+    "g++", "-g", "-Wall", "*.cpp", "-o", "${file_base_name}.exe", "&&", "start", "cmd", "/K" , "$file_base_name"
   ],
     "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
     "shell": true,

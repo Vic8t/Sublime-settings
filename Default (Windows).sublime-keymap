@@ -54,9 +54,19 @@
             "title": "cmd"
         }
     },
-    // Open Git Bash
+    // Open Bash
     {
         "keys": ["alt+b"],
+        "command": "terminus_open",
+        "args" : {
+            "cmd": "bash.exe",
+            "cwd": "${file_path:${folder}}",
+            "title": "Bash"
+        }
+    },
+    // Open Git Bash
+    {
+        "keys": ["alt+g"],
         "command": "terminus_open",
          "args" : {
             "cmd": ["C:\\Program Files (x86)\\Git\\bin\\bash.exe", "-i", "-l"],
@@ -85,7 +95,7 @@
             "title": "C"
         }
     },
-
+    // Refresh browser for web development
     {
         "keys": ["ctrl+shift+r"],
         "command": "browser_refresh",
