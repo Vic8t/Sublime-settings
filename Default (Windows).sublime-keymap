@@ -54,7 +54,7 @@
             "title": "cmd"
         }
     },
-    // Open Bash
+    // Open bash
     {
         "keys": ["alt+b"],
         "command": "terminus_open",
