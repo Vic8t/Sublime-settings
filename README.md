@@ -12,6 +12,7 @@ Here is a list of useful packages you may want to install:
 - All Autocomplete (extend auto-completion to all open files)
 - Browser Refresh (save the current file and refresh browser)
 - Color Highlight (highlight color values)
+- FileDiffs (diffs between 2 files)
 - MarkdownPreview (Markdown preview)
 - Origami (split window freely)
 - PackageResourceViewer (view package resources)
@@ -33,12 +34,13 @@ These are some key bindings I added to my configuration:
 
 <kbd>alt</kbd> + <kbd>g</kbd> : open git bash
 
-<kbd>alt</kbd> + <kbd>y</kbd> : run current Python program
-
-<kbd>alt</kbd> + <kbd>c</kbd> : compile and run current C program
+<kbd>alt</kbd> + <kbd>r</kbd> : run current program (Python or C)
 
 ## Build systems
 I created build systems for Python, C, C++ and R.
-You can add them in Sublime Text 3\Packages\User
+
+You can add them in `Sublime Text 3\Packages\User`.
+
 To use them, go to Tools &rarr; Build System and select one.
+
 Press <kbd>ctrl</kbd> + <kbd>b</kbd> or <kbd>f7</kbd> to execute it.
