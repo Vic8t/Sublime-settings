@@ -75,26 +75,17 @@
          }
     },
 
-    // Run Python programs
+    // Run programs
     {
-        "keys": ["alt+y"],
+        "keys": ["alt+r"],
         "command": "terminus_open",
         "args" : {
-            "cmd": ["cmd", "/K", "python", "$file", "&&", "pause", "&&", "exit"],
+            "cmd": ["cmd", "/K", "if", "$file_extension", "==", "py", "(python", "$file", "&&", "pause", "&&", "exit)", "else", "if", "$file_extension", "==", "c", "(gcc", "-g", "-Wall", "*.c", "-o", "${file_base_name}.exe", "&&", "${file_base_name}.exe", "&&", "pause)"],
             "cwd": "${file_path:${folder}}",
-            "title": "Python"
+            "title": "Run"
         }
     },
-    // Compile and run C programs
-    {
-        "keys": ["alt+c"],
-        "command": "terminus_open",
-        "args" : {
-            "cmd": ["cmd", "/K", "gcc", "-g", "-Wall", "*.c", "-o", "${file_base_name}.exe", "&&", "${file_base_name}.exe", "&&", "pause", "&&", "exit"],
-            "cwd": "${file_path:${folder}}",
-            "title": "C"
-        }
-    },
+
     // Refresh browser for web development
     {
         "keys": ["ctrl+shift+r"],
